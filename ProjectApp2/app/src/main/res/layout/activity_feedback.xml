@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp"
+    tools:context=".FeedbackActivity">
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Category" />
+
+    <RadioGroup
+        android:id="@+id/feedback_radio_group"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp">
+
+        <RadioButton
+            android:id="@+id/feedback_like_radio_button"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="I like something" />
+
+        <RadioButton
+            android:id="@+id/feedback_dislike_radio_button"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="I dislike something" />
+
+        <RadioButton
+            android:id="@+id/feedback_idea_radio_button"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="I have an idea" />
+    </RadioGroup>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="Description" />
+
+    <EditText
+        android:id="@+id/feedback_description"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginTop="8dp"
+        android:layout_weight="1"
+        android:hint="Description"
+        android:inputType="textMultiLine" />
+
+    <FrameLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="right"
+        android:layout_marginTop="16dp"
+        android:background="@color/colorAccent">
+
+        <Button
+            android:id="@+id/feedback_send_button"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="?android:attr/selectableItemBackground"
+            android:text="send"
+            android:textColor="@android:color/white" />
+    </FrameLayout>
+
+
+</LinearLayout>

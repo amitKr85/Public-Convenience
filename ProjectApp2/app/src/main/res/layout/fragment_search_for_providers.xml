@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:paddingBottom="16dp"
+        android:paddingTop="16dp"
+        android:paddingLeft="16dp"
+        android:paddingRight="16dp">
+
+        <Spinner
+            android:id="@+id/search_for_providers_type_spinner"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_marginRight="8dp"
+            android:layout_weight="1" />
+
+        <FrameLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@color/colorAccent">
+
+
+            <Button
+                android:id="@+id/search_for_providers_search_button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="?android:attr/selectableItemBackground"
+                android:text="search"
+                android:textColor="@android:color/white" />
+        </FrameLayout>
+
+    </LinearLayout>
+
+    <!--<TextView
+        android:id="@+id/search_for_providers_userid_text_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+        -->
+
+    <ListView
+        android:id="@+id/search_for_providers_list_view"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"/>
+
+    <!--empty view placeholder-->
+    <RelativeLayout
+        android:id="@+id/empty_view_placeholder"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="Nothing to show"
+            android:textSize="20sp"/>
+
+    </RelativeLayout>
+</LinearLayout>

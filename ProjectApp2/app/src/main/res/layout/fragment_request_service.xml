@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp" >
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Select type of Service you need"/>
+    <Spinner
+        android:layout_marginTop="8dp"
+        android:id="@+id/request_service_spinner"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <EditText
+        android:layout_marginTop="16dp"
+        android:id="@+id/request_service_short_editText"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight=".3"
+        android:hint="Short Description"
+        android:inputType="textMultiLine" />
+    <EditText
+        android:layout_marginTop="16dp"
+        android:id="@+id/request_service_detail_editText"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight=".7"
+        android:hint="Full Description"
+        android:inputType="textMultiLine" />
+
+    <FrameLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:layout_gravity="right"
+        android:background="@color/colorAccent">
+
+        <Button
+            android:id="@+id/request_service_button"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="?android:attr/selectableItemBackground"
+            android:textColor="@android:color/white"
+            android:text="Request" />
+    </FrameLayout>
+</LinearLayout>
